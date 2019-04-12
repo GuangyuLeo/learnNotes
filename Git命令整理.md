@@ -30,15 +30,22 @@
 * 对某个已放入stage暂存区的文件撤销add操作
 `git reset HEAD -- fileName`
 ### 远程命令
+* curl调用api接口创建GitHub远程库
+
+  `curl -u 'GuangyuLeo':'password' https://api.github.com/user/repos -d '{"GuangyuLeo":"learnNotes"}'`
+
 * 关联远程Origin库
-`git remote add origin https://github.com/GuangyuLeo/learngit.git`
+  `git remote add origin https://github.com/GuangyuLeo/learngit.git`
+
 * 推送本地master至origin库并关联
-`git push -u origin master`
+  `git push -u origin master`
+
 * 从远程origin库克隆到本地
-`git clone git@github.com:GuangyuLeo/gitskills.git`
+  `git clone git@github.com:GuangyuLeo/gitskills.git`
+
 * 查看远程库信息
-`git remote`
-`git remote -v`
+  `git remote`
+  `git remote -v`
 > github提供两种地址分别支持ssh和https，https需要登录github，ssh只需要添加rsa密匙
 * 推送分支
 `git push`
