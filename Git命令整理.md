@@ -30,9 +30,10 @@
 * 对某个已放入stage暂存区的文件撤销add操作
 `git reset HEAD -- fileName`
 ### 远程命令
+
 * curl调用api接口创建GitHub远程库
 
-  `curl -u 'GuangyuLeo':'password' https://api.github.com/user/repos -d '{"GuangyuLeo":"learnNotes"}'`
+  `curl -u 'GuangyuLeo':'password' https://api.github.com/user/repos -d '{"name":"learnNotes"}'`
 
 * 关联远程Origin库
   `git remote add origin https://github.com/GuangyuLeo/learngit.git`
